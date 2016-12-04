@@ -4,24 +4,24 @@
 }
 
 body{
-  font-family: sans-serif;
+  font-family: gadugi, sans-serif;
 }
 
 .wrapper{
-  max-width: 950px;
+  max-width: 90%;
   margin:0px auto;
 }
 
 .header{
-  line-height: 50px;
-  height: 500px;
-  background-color: #eee;
-  padding:30px;
+  line-height: 52px;
+  padding:15px 10px;
+  height:50px;
+  position:relative;
 }
 
 .header .logo-wrapper{
   float: left;
-  width:50%;
+  width: 60%;
 }
 
 .header .logo{
@@ -30,8 +30,8 @@ body{
 }
 
 .header .name{
-  font-weight: bold;
   font-size:1.2em;
+  color: #f78a0a;
 }
 
 .header .navigation{
@@ -43,11 +43,90 @@ body{
 }
 
 .navigation a{
-  color: black;
+  color: #676563;
   text-decoration: none;
   margin-left:15px;
+  font-size:0.9em;
+  letter-spacing: 0.02em;
 }
 
 .navigation a:hover{
-  font-weight: bold;
+  color:black;
+}
+
+.jumbotron{
+  height:700px;
+  width: 100%;
+  position:relative;
+}
+
+.jumbotron img{
+  width: 100%;
+  position: absolute;
+  top:0px;
+  z-index: -1;
+}
+
+.jumbotron .jumbo-text{
+  color: white;
+  font-size:3.5em;
+  text-align:center;
+  position:relative;
+}
+
+i{
+  color:black;
+  width:10px;
+  height: 10px;
+}
+
+.nav-toggle{
+  display: none;
+  cursor: pointer;
+  color: gray;
+}
+
+.active ul{
+  display: block !important;
+}
+
+@media only screen and (max-width: 950px){
+  .logo-wrapper{
+    width: 90% !important;
+  }
+  .nav-toggle{
+    display: block;
+    line-height: 52px;
+  }
+  .navigation ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top:80px;
+    left: 0px;
+  }
+  .navigation ul li{
+    display: block;
+    width: 100%;
+    padding:1px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+  }
+  .logo{
+    height: 30px !important;
+    margin-top: 10px;
+  }
+  .wrappper{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .name{
+    font-size:1em !important;
+  }
+  .logo{
+    display: none;
+  }
 }
