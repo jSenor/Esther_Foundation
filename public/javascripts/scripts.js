@@ -1,5 +1,5 @@
 window.onload = function(){
-	setInterval(reload, 1000);
+	// setInterval(reload, 1000);
 
 	//Set the height position of the jumbotron text
 	placeJumboText();
