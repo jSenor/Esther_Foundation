@@ -30,6 +30,11 @@ function toggleNavigation(){
 	});
 }
 
+function centerMapAndAddress(){
+	var map = document.querySelector(".map");
+	var info = document.querySelector(".location-info");
+}
+
 function reload(){
 	location.reload();
 }
