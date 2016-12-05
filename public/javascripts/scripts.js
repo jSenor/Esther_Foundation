@@ -12,10 +12,15 @@ window.onload = function(){
 }
 
 function placeJumboText(){
-	var jumboText = document.querySelector(".jumbo-text");
-	var jumbo = document.querySelector(".jumbotron img");
-	var jumboHeight = Number(jumbo.height);
-	jumboText.style.top = (jumboHeight / 2) + "px";
+	try{
+		var jumboText = document.querySelector(".jumbo-text");
+		var jumbo = document.querySelector(".jumbotron img");
+		var jumboHeight = Number(jumbo.height);
+		jumboText.style.top = (jumboHeight / 2) + "px";
+	}
+	catch(err){
+		console.log("Failed");
+	}
 }
 
 function toggleNavigation(){

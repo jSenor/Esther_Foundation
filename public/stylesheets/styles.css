@@ -414,6 +414,163 @@ i{
   font-weight: 200;
 }
 
+.our-mission, .our-vision{
+  text-align: center;
+}
+
+.statement{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.statement .section-title{
+  padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: orange;
+}
+
+.statement .section-content{
+  width: 50%;
+  margin: 0px auto;
+  line-height: 30px;
+  font-size: 0.8em;
+  color: #6a6a6a;
+}
+
+.our-vision{
+  background-color: #e68e2c;
+}
+
+.our-vision .section-title{
+  color: white;
+}
+
+.our-vision .section-content{
+  color: white;
+}
+
+.what-we-do{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  border-top: 3px solid #eee;
+}
+
+.what-we-do .title{
+  padding-bottom: 60px;
+  color: #6a6a6a;
+}
+
+.what-we-do .image{
+  height: 200px;
+  width: 200;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.what-we-do .text{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  color: #6a6a6a;
+}
+
+.banner{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.banner .banner-title{
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: calibri;
+  letter-spacing: 0.1em;
+}
+
+.our-partners .banner{
+  background-color: #3a4335;
+  margin-bottom: 60px;
+}
+
+.our-partners .banner-title{
+  color: white;
+}
+
+.partners{
+  height: 500px;
+}
+
+.the-team .banner{
+  background-color: #ea8d1e;
+  margin-bottom: 60px;
+}
+
+.the-team .banner-title{
+  color: white;
+}
+
+.team{
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.team .main{
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.team .member-image{
+  border: 3px solid gray;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.team .member-info{
+  padding-top: 30px;
+}
+
+.team .name{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team .short-bio{
+  font-size: 0.8em;
+}
+
+.team:after, .main:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.more{
+  width: 525px;
+  margin: 0 auto;
+}
+
+.more .member-image{
+  height: 50px;
+  width: 50px;
+  border: 1px solid gray;
+}
+
+.more:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 @media only screen and (max-width: 950px){
   body{
     font-size:15px;
@@ -556,5 +713,30 @@ i{
   .join-us{
     padding-top: 100px;
     padding-bottom: 100px;;
+  }
+  .statement{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .statement .section-title{
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: orange;
+  }
+
+  .statement .section-content{
+    width: 90%;
+    margin: 0px auto;
+    line-height: 20px;
+    font-size: 0.8em;
+    color: #6a6a6a;
+  }
+  .our-vision .section-title, .our-vision .section-content{
+    color: white !important;
+  }
+  .our-mission{
+    padding-top: 30px;
   }
 }
