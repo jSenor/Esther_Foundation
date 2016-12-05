@@ -71,7 +71,7 @@ button{
 
 .jumbotron .jumbo-text{
   color: white;
-  font-size:3.5em;
+  font-size:2.5em;
   text-align:center;
   position:absolute;
   width: 100%;
@@ -98,8 +98,8 @@ i{
 .who-we-are{
   text-align: center;
   padding:10px;
-  padding-top:100px;
-  padding-bottom: 100px;
+  padding-top:130px;
+  padding-bottom: 130px;
 }
 
 .title{
