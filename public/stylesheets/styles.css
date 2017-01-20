@@ -1,14 +1,25 @@
 *{
   margin: 0px;
   padding: 0px;
+  /*font-size: 17px;*/
+  font-family: 'Quicksand', sans-serif;
 }
 
 body{
   font-family: gadugi, sans-serif;
 }
 
+.clear-both{
+  clear: both;
+}
+
 button{
   font-size: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 .wrapper{
@@ -141,6 +152,13 @@ i{
   border:3px solid #959191;
   border-radius: 50%;
   margin-bottom: 30px;
+}
+
+.pic{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 100%;
 }
 
 .other-sections a{
@@ -519,57 +537,153 @@ i{
   padding-bottom: 150px;
 }
 
-.team .main{
-  margin: 0 auto;
-  width: 300px;
-  margin-bottom: 30px;
-}
-
-.team .member-image{
-  border: 3px solid gray;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  float: left;
-  margin-right: 20px;
-}
-
-.team .member-info{
-  padding-top: 30px;
-}
-
-.team .name{
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.team .short-bio{
-  font-size: 0.8em;
-}
-
 .team:after, .main:after{
   content: "";
   display: block;
   clear: both;
 }
 
-.more{
-  width: 525px;
-  margin: 0 auto;
+.member{
+  border-radius: 5px;
+  height: 300px;
+  max-width: 300px;
+  min-width: 300px;
+  float: left;
+  /*background-color: #3a4335;*/
+  padding-top: 40px;
 }
 
-.more .member-image{
-  height: 50px;
-  width: 50px;
-  border: 1px solid gray;
+.member-image{
+  /*border: 1px solid black;*/
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: calc(50% - 75px);
+  margin-top: 20px;
+  border-radius: 50%;
 }
 
-.more:after{
-  content: "";
-  display: table;
-  clear: both;
+.member-name, .member-post{
+  /*border: 1px solid black;*/
+  margin-top: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
 }
 
+.member-post{
+  height: 20px;
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.contact-us{
+  cursor: pointer;
+}
+
+.contacts{
+  padding-top: 100px;
+}
+
+.contacts div{
+  /*border: 1px solid black;*/
+  padding:50px 0px;
+  text-align: center;
+}
+
+.contacts .heading{
+  margin-bottom:20px;
+  font-weight: bold;
+  color: #239966;
+}
+
+.content{
+  color: black;
+  font-size: 1.2em;
+}
+
+.address{
+  font-size: 1.2em;
+}
+
+.head{
+  font-weight: bold;
+  color: #239966;
+}
+
+.visit-us{
+  margin-bottom: 200px;
+}
+
+.visit-us .banner{
+  margin-bottom: 150px;
+}
+
+.visit-us .banner, .visit-us button{
+  background-color: #8c6239;
+}
+
+.visit-us .banner-title{
+  color: white;
+}
+
+.donate .banner{
+  background-color: #7e7c39;
+  margin-bottom: 100px;
+}
+
+.donate .banner-title{
+  color: white;
+}
+
+.donate{
+  margin-bottom: 100px;
+}
+
+.bank-info{
+  text-align: center;
+}
+
+.bank-info p{
+  margin-bottom: 10px;
+}
+
+.bank-info .heading{
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+.pics{
+  border-radius: none;
+  width: 100%;
+  height: 100%;
+}
+
+.case-content{
+  margin: 0px 20px;
+  margin-bottom: 40px;
+  font-size:1.2em;
+  line-height: 1.75em;
+}
+
+.case-content .title{
+  /*border: 1px solid black;*/
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2em;
+  color: black;
+}
+
+.case-content img{
+  width: 400px;
+  height: 300px;
+  float: left;
+  margin-right:30px;
+  margin-top: 23px;
+  /*border-radius: 10px;*/
+}
 
 @media only screen and (max-width: 950px){
   body{
@@ -657,6 +771,19 @@ i{
     width: 100%;
     float: none;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 620px){
+  .member{
+    clear: both;
+    position: relative;
+    left: calc(50% - 150px);
+  }
+
+  .case-content img{
+    width: 100%;
+    margin-bottom: 30px; 
   }
 }
 
